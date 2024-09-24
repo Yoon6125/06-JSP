@@ -16,30 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `javasqlboard`
+-- Table structure for table `ps_board_free`
 --
 
-DROP TABLE IF EXISTS `javasqlboard`;
+DROP TABLE IF EXISTS `ps_board_free`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `javasqlboard` (
-  `num` int NOT NULL AUTO_INCREMENT,
-  `title` char(70) NOT NULL,
-  `content` text NOT NULL,
-  `id` char(50) NOT NULL,
-  `date_time` datetime NOT NULL,
-  PRIMARY KEY (`num`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `ps_board_free` (
+  `B_NO` int NOT NULL AUTO_INCREMENT,
+  `B_TITLE` char(100) NOT NULL DEFAULT '',
+  `B_ID` char(50) NOT NULL,
+  `B_DATETIME` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `B_HIT` int NOT NULL DEFAULT '0',
+  `B_TEXT` text NOT NULL,
+  `B_REPLY_COUNT` int NOT NULL DEFAULT '0',
+  `B_REPLY_ORI` int NOT NULL DEFAULT '-1',
+  PRIMARY KEY (`B_NO`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `javasqlboard`
+-- Dumping data for table `ps_board_free`
 --
 
-LOCK TABLES `javasqlboard` WRITE;
-/*!40000 ALTER TABLE `javasqlboard` DISABLE KEYS */;
-INSERT INTO `javasqlboard` VALUES (1,'테스트제목','테스트 내용','아디','2024-09-23 09:13:37'),(3,'테스트제목 수정','null','아디','2024-09-24 16:26:04'),(6,'수정ㅁㅇㄴㄹ','수정됨ㅁㄴㅇㄹ','수정ㅁㅇㄴㄹ','2024-09-23 11:41:12'),(8,'시험작성2 수정테스트','시험작성2 예\r\n수정 완료, 수정완료','ㅅㅈ','2024-09-23 15:19:07'),(10,'daodto 수정','null','수정','2024-09-24 15:51:29'),(11,'ㅁㅁ','ㅁㅁㅁ','ㅁㅁㅁ','2024-09-24 16:38:56');
-/*!40000 ALTER TABLE `javasqlboard` ENABLE KEYS */;
+LOCK TABLES `ps_board_free` WRITE;
+/*!40000 ALTER TABLE `ps_board_free` DISABLE KEYS */;
+INSERT INTO `ps_board_free` VALUES (1,'afddadf','adfaf','2024-09-24 12:47:17',0,'aaf',0,-1),(2,'야옹','cat','2024-09-24 17:29:35',0,'aaa',0,-1),(3,'야옹','cat','2024-09-24 17:29:36',0,'aaa',0,-1);
+/*!40000 ALTER TABLE `ps_board_free` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
