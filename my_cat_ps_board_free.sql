@@ -32,7 +32,7 @@ CREATE TABLE `ps_board_free` (
   `B_REPLY_COUNT` int NOT NULL DEFAULT '0',
   `B_REPLY_ORI` int NOT NULL DEFAULT '-1',
   PRIMARY KEY (`B_NO`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `ps_board_free` (
 
 LOCK TABLES `ps_board_free` WRITE;
 /*!40000 ALTER TABLE `ps_board_free` DISABLE KEYS */;
-INSERT INTO `ps_board_free` VALUES (1,'afddadf','adfaf','2024-09-24 12:47:17',0,'aaf',0,-1),(2,'야옹','cat','2024-09-24 17:29:35',0,'aaa',0,-1),(3,'야옹','cat','2024-09-24 17:29:36',0,'aaa',0,-1);
+INSERT INTO `ps_board_free` VALUES (1,'야옹','cat','2024-09-27 12:03:26',0,'aaa',0,-1),(3,'수정','수저','2024-09-27 12:04:10',0,'수정글',0,-1),(4,'ㅁㅇㄻ','ㅁㅇㄴㄹ','2024-09-27 12:03:54',0,'ㅁㅇㄻ',0,-1),(5,'글','글','2024-09-27 16:51:36',0,'글',0,-1);
 /*!40000 ALTER TABLE `ps_board_free` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-24 17:48:59
+-- Dump completed on 2024-09-27 17:49:03
